@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tim Gabriel Ocampo | Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #111827;
+            --accent: #38bdf8;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #020617, #0f172a);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        header span {
+            color: var(--accent);
+        }
+
+        header p {
+            margin-top: 15px;
+            font-size: 1.1rem;
+            color: var(--muted);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+            display: grid;
+            gap: 40px;
+        }
+
+        section {
+            background: rgba(17, 24, 39, 0.85);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,0.05);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .about p {
+            line-height: 1.7;
+            color: var(--muted);
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .skill {
+            background: #020617;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: #020617;
+            padding: 20px;
+            border-radius: 14px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .project:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .project p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tim Gabriel <span>Ocampo</span></h1>
+        <p>IT Programmer • Java • JavaScript • Web Applications</p>
+    </header>
+
+    <main class="container">
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                I am an IT programmer with experience in Java, JavaScript, and web-based
+                applications. I enjoy building clean, functional systems and transforming
+                ideas into working software. My focus is on logic, structure, and user-friendly
+                design.
+            </p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">Java</div>
+                <div class="skill">Java Swing</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">HTML & CSS</div>
+                <div class="skill">Git & GitHub</div>
+                <div class="skill">Problem Solving</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Attendance Tracker</h3>
+                    <p>
+                        A Java-based attendance system with timestamp logging,
+                        file generation, and a modern UI.
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h3>Adventure Game</h3>
+                    <p>
+                        A 2D browser-based adventure game featuring movement,
+                        collectibles, and enemies.
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h3>Grade Calculator</h3>
+                    <p>
+                        A Java JFrame and web-based grade calculator designed
+                        for academic use.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © 2026 Tim Gabriel Ocampo · 
+            <a href="https://github.com/" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+</body>
+</html>
